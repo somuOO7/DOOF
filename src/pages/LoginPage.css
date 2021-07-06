@@ -1,0 +1,114 @@
+.loginPage {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.loginPage__input {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	padding: 3rem 5rem 2rem;
+	box-sizing: border-box;
+}
+
+.loginPage__input > .inputHeader {
+	color: var(--primary-color);
+}
+
+.loginPage__input > .inputBody {
+	flex: 1;
+	padding: 3rem 0 12rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.loginPage__input > .inputBody > .MuiTextField-root,
+.inputBody__password > .MuiTextField-root,
+.inputBody > button {
+	width: 20rem;
+}
+
+.inputBody__password {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.inputBody__password > p {
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.inputBody > button {
+	background-color: var(--primary-color);
+	font-weight: 700;
+}
+
+.inputBody > button:hover {
+	background-color: var(--accent-color);
+}
+
+.inputBody > p > strong {
+	cursor: pointer;
+}
+
+.inputFooter {
+	display: flex;
+}
+
+.inputFooter > p {
+	margin-right: 5rem;
+}
+
+/* LOGINPAGE IMAGE STYLES */
+
+.loginImage {
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	text-align: end;
+	padding: 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-sizing: border-box;
+	align-items: flex-end;
+}
+
+.loginImage__circle {
+	background-color: var(--accent-color);
+	height: 115vh;
+	width: 115vh;
+	border-radius: 50%;
+	position: absolute;
+	z-index: -10;
+	top: -30vh;
+	left: 0;
+	display: none;
+}
+
+.loginImage > button {
+	background-color: var(--primary-color);
+	font-weight: 700;
+	width: 10rem;
+}
+
+.loginImage > button:hover {
+	background-color: var(--accent-color);
+}
+
+@media (min-width: 1280px) {
+	.loginPage {
+		justify-content: space-between;
+	}
+
+	.loginPage__input {
+		padding-left: 12rem;
+	}
+
+	.loginImage__circle {
+		display: block;
+	}
+}
